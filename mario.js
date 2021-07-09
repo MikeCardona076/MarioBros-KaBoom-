@@ -1,3 +1,7 @@
+import nivel_one from './level1';
+
+console.log(nivel_one())
+
 kaboom({
     global: true,
     fullscreen: true,
@@ -38,19 +42,8 @@ kaboom({
   scene("game", ({ level, score }) => {
     layers(['bg', 'obj', 'ui'], 'obj')
   
-    const maps = [
-      [
-        '                                                 ',
-        '                             ==========          ',
-        '                                                 ',
-        '                      ==========                 ',
-        '                                                 ',
-        '     %   =*=%=       ==========                  ',
-        '                                                 ',
-        '                       -+                        ',
-        '               ^   ^   ()                        ',
-        '==============================   =====',
-      ],
+    const maps = [ 
+      nivel_one(),
       [
         '£                                       £',
         '£                                       £',
